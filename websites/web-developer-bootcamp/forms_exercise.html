@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Forms Exercise Solution</title>
+</head>
+<body>
+
+	<h1>Resister</h1>
+	
+	<!-- form begins -->
+	<form action="" method="">
+		
+		<!-- asking first-name and last-name which is required -->
+		<div>
+			<label for="fname">First Name:</label>
+			<input id="fname" name="fname" type="text" placeholder="John" required>
+
+			<label for="lname">Last Name:</label>
+			<input id="lname" name="lname" type="text" placeholder="Smith" required>
+		</div>
+		
+		<!-- asking for user's gender -->
+		<div>
+			<label for="choice-1">Male</label>
+			<input id="choice-1" type="radio" name="gender" value="male">
+
+			<label for="choice-2">Female</label>
+			<input id="choice-2" type="radio" name="gender" value="female">
+
+			<label for="choice-3">Other</label>
+			<input id="choice-3" type="radio" name="gender" value="other">
+		</div>
+		
+		<!-- asking user's email and password (required and password has to between 5-10 charecters)  -->
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email" placeholder="your email" required>
+
+			<label for="password">Password:</label>
+			<input id="password" type="password" name="password" placeholder="your password" pattern=".{5,10}" title="Enter a password between 5-10 charecters" required>
+		</div>
+		
+		<!-- asking user's birthday date (month/day/year) -->
+		<div>
+			<label for="bday">Birthday:
+				<select id="bday" name="month">
+					<option value="">Month</option>
+					<option value="january">January</option>
+					<option value="february">February</option>
+					<option value="march">March</option>
+				</select>
+
+				<select id="bday" name="day">
+					<option value="">Day</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+
+				<select id="bday" name="year">
+					<option value="">Year</option>
+					<option value="2018">2018</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+				</select>
+			</label>
+		</div>
+		
+		<!-- did user agreed our terms and conditions??? -->
+		<div>
+			<label for="agreed">I agree to the terms and conditons</label>
+			<input id="agreed" type="checkbox" name="terms">
+		</div>
+		
+		<!-- finally submit the form!!! -->
+		<div>
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+	<!-- form ends -->
+
+</body>
+</html>
